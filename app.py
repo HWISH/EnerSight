@@ -68,7 +68,6 @@ def predict_energy_consumption(start_date_str, end_date_str):
     plt.title("Predicted Energy Consumption over Time")
     plt.tight_layout()
 
-    # Save plot to a BytesIO object
     img = BytesIO()
     plt.savefig(img, format='png')
     img.seek(0)

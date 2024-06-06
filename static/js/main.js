@@ -1,7 +1,7 @@
 (function ($) {
     "use strict";
 
-    // Spinner
+    
     var spinner = function () {
         setTimeout(function () {
             if ($('#spinner').length > 0) {
@@ -12,11 +12,11 @@
     spinner();
     
     
-    // Initiate the wowjs
+   
     new WOW().init();
     
     
-   // Back to top button
+  
    $(window).scroll(function () {
     if ($(this).scrollTop() > 300) {
         $('.back-to-top').fadeIn('slow');
@@ -30,7 +30,6 @@
     });
 
 
-    // Team carousel
     $(".team-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1000,
@@ -58,7 +57,6 @@
     });
 
 
-    // Testimonial carousel
 
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
